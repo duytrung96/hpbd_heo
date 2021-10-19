@@ -3,8 +3,8 @@
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="icon" type="image/png" href="./img/CILKGax.png">
-        <!-- Tiêu đề của trang dòng thời gian -->
-		<title>Thời gian đã trải qua</title>	    
+       
+		<title>Kỉ niệm</title>	    
         <link type="text/css" rel="stylesheet" href="./css/default.css">
         <link rel="stylesheet" href="./css/style.css">
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -21,34 +21,32 @@
 </head>
     <body>
         <div class="buttons">
-            <a href="index.html" class="btn btn-bir">Sinh nhật</a>
-            <a href="timeline.html" class="btn btn-timeline">Dòng thời gian</a>
+            <a href="index.html" class="btn btn-bir">Background</a>
+            <a href="timeline.html" class="btn btn-timeline">Lời chúc</a>
             <a href="gallery.html" class="btn btn-gallery">Ảnh kỉ niệm</a>
         </div>
         <div id="main">
              <div id="wrap">
                 <div id="text">
 			        <div id="code">
-					<!-- 4. CHỈNH SỬA LỜI CHÚC CỦA BẠN TẠI ĐÂY-->
-			      <font color="#3500ff"><span class="say">Chúc mừng sinh nhật Heo</span><br>
-						<span class="say">Có lẽ mình quen biết nhau một khoảng thời gian khá lâu rồi nhỉ?</span><br>
-						<span class="say">Tình bạn trên 5 năm!</span><br>
-						<span class="say">Nói là bạn bè nhưng cũng ít có cơ hội đi chơi chung</span><br>
-						<span class="say">Nên cũng chẳng có kỷ niệm hay bức ảnh chung nào!</span><br>
+					
+			      <font color="#3500ff"><span class="say">Chúc các bạn nữ nhóm mình ngày 20/10 vui vẻ!</span><br>
+						<span class="say">Tụi mình quen biết nhau cũng khá lâu rồi nhỉ?</span><br>
+						<span class="say">7 năm trời với khá nhiều kỷ niệm vui, buồn</span><br>
+						<span class="say">Giờ mỗi đứa mỗi công việc, cuộc sống riêng</span><br>
+						<span class="say">Nhưng tình bạn hy vọng sẽ còn mãi!</span><br>
                         <span class="say"> </span><br>
-						<span class="say">Có 1 khoảng thời gian,</span><br>
-						<span class="say">Khoảng thời gian mà tui bị "cảm nắng"</span><br>
-						<span class="say">Nhưng nhận ra cũng chỉ là đơn phương,</span><br>
-						<span class="say">Rồi tất cả cũng là quá khứ</span><br>
-						<span class="say">Tương lai chưa biết như thế nào</span><br>
-						<span class="say">Nhưng hiện tại Chúc Heo sinh nhật vui vẻ nha :)</span><br>
+						<span class="say">Nay cũng rảnh rảnh nên "phá" tí</span><br>
+						<span class="say">Làm cái demo chúc ngày Phụ nữ Việt Nam</span><br>
+						<span class="say">Chúc 3 bạn nữ nhóm mình ngày càng xinh đẹp, may mắn, thành công</span><br>
+						<span class="say">Đặc biệt có thể phá vỡ lời nguyền F.A của nhóm :)</span><br>
 						<span class="say"> </span><br>
-                        <span class="say"><span class="space"></span> -- Phó --</span>
+                        <span class="say"><span class="space"></span> Demo vui mấy bạn đừng tìm cũng như fix bug nha :))</span>
 			  </font></p>
       </div>
                 </div>
                 <div id="clock-box">
-					<span class="STYLE1"> Thời gian quen biết nhau</span>  <!--Có thể thay đổi chổ này thành số tuổi của người bạn muốn chúc -->
+					<span class="STYLE1"> Thời gian quen biết nhau</span>  
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -56,7 +54,7 @@
             
         </div>
 
-    <!-- Phần nhạc -->
+   
     <audio id="player" autoplay loop>
         <source src="./music/music.mp3" type="audio/mp3" />
     </audio>
@@ -187,7 +185,7 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    var year = 2014, month = 10, day = 20;  // 5. thay đổi ngày tháng năm yêu nhau tại đây hoặc ngày sinh của người mà bạn muốn chúc
+		    var year = 2014, month = 10, day = 20;  
 		    together.setFullYear(year, month - 1, day); 			
 		    together.setHours(0);							
 		    together.setMinutes(0);				
